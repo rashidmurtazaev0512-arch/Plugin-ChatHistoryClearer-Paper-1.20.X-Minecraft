@@ -1,0 +1,22 @@
+name: ChatHistoryClearer
+version: 1.0.0
+main: com.yourname.chathistoryclearer.ChatHistoryClearer
+api-version: 1.20
+description: Автоматически очищает историю чата игроков при выходе
+author: vysbik и doqaax
+
+commands:
+  clearchat:
+    description: Очистить историю чата
+    usage: |
+      /<command> - очистить чат для всех
+      /<command> <игрок> - очистить чат для конкретного игрока
+    aliases: [cc, chatclear]
+
+permissions:
+  chathistoryclearer.use:
+    description: Разрешает использовать команду /clearchat
+    default: op
+  chathistoryclearer.bypass:
+    description: Защищает от очистки чата (для администраторов)
+    default: op
